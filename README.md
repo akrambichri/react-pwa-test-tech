@@ -7,7 +7,7 @@ A React JS app to capture photos, videos and audios using WebRTC as a Progressiv
 A simple PWA demo that displays the text "Hello, World!" utilizing an app manifest, service workers and caching. This demo is written in plain-vanilla HTML, CSS and Javascript (ES6). It has no dependencies.
 
 
-<!-- #### Demo: [https://demo.reactpwa.com](https://demo.reactpwa.com) -->
+#### Demo: [https://react-pwa-test-tech.netlify.app](https://react-pwa-test-tech.netlify.app)
 
 ### Quick Start
 Clone the repository:

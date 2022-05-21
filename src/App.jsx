@@ -1,13 +1,13 @@
-import React, { Component, lazy } from "react";
+import React, { Component, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages";
+import Navbar from "./components/Navbar";
 import Auth from "./pages/auth";
 import storage from "./firebaseConfig";
 import { ref, uploadString, StringFormat } from "firebase/storage";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Navbar = lazy(() => import("./components/Navbar"));
+const Home = lazy(() => import("./pages"));
 const Audios = lazy(() => import("./pages/audios"));
 const Videos = lazy(() => import("./pages/videos"));
 const Images = lazy(() => import("./pages/images"));
@@ -109,29 +109,31 @@ class App extends Component {
       );
     }
     return (
-      <Router>
-        <Navbar logOut={this.removeToken} />
-        <ToastContainer />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Home offline={this.state.offline} />}
-          />
-          <Route
-            path="/audios"
-            element={<Audios offline={this.state.offline} />}
-          />
-          <Route
-            path="/videos"
-            element={<Videos offline={this.state.offline} />}
-          />
-          <Route
-            path="/images"
-            element={<Images offline={this.state.offline} />}
-          />
-        </Routes>
-      </Router>
+      <Suspense fallback={<span>loading....</span>}>
+        <Router>
+          <Navbar logOut={this.removeToken} />
+          <ToastContainer />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Home offline={this.state.offline} />}
+            />
+            <Route
+              path="/audios"
+              element={<Audios offline={this.state.offline} />}
+            />
+            <Route
+              path="/videos"
+              element={<Videos offline={this.state.offline} />}
+            />
+            <Route
+              path="/images"
+              element={<Images offline={this.state.offline} />}
+            />
+          </Routes>
+        </Router>
+      </Suspense>
     );
   }
 }
