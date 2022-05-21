@@ -31,6 +31,10 @@ Install the dependencies:
 ```bash
 npm install
 ```
+Add Firebase credentials:
+```bash
+./src/firebaseConfig.js
+```
 
 To start the project run following command in your terminal:
 ```bash
