@@ -48,7 +48,7 @@ npm run build
 
 ## Browser Compatibility
 
-Hello PWA has been tested in the following browsers:
+This App has been tested in the following browsers:
 
 * Chrome 67 (Windows and Android)
 * Firefox 60
