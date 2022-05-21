@@ -9,6 +9,13 @@ A simple PWA demo that displays the text "Hello, World!" utilizing an app manife
 
 #### Demo: [https://react-pwa-test-tech.netlify.app](https://react-pwa-test-tech.netlify.app)
 
+
+![React Js Media Control Screenshot](./screenshot.png "React Js Media Control Screenshot")
+
+
+![App Performance feedback Screenshot](./performance.png "App Performance feedback Screenshot")
+
+
 ### Quick Start
 Clone the repository:
 ```bash
