@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Navbar = lazy(() => import("./components/Navbar"));
 const Audios = lazy(() => import("./pages/audios"));
 const Videos = lazy(() => import("./pages/videos"));
-const Images = lazy(() => import("./pages/Images"));
+const Images = lazy(() => import("./pages/images"));
 
 class App extends Component {
   constructor() {
