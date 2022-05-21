@@ -4,7 +4,7 @@ A React JS app to capture photos, videos and audios using WebRTC as a Progressiv
 
 ## What It Is
 
-A simple PWA demo that displays the text "Hello, World!" utilizing an app manifest, service workers and caching. This demo is written in plain-vanilla HTML, CSS and Javascript (ES6). It has no dependencies.
+A simple React JS PWA demo that make use of WebRTC and Firebase Storage utilizing an app manifest, service workers and caching. This demo is written in React js. It has react-media-recorder, react-toastify and firebase as dependencies.
 
 
 #### Demo: [https://react-pwa-test-tech.netlify.app](https://react-pwa-test-tech.netlify.app)
